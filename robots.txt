@@ -1,0 +1,9 @@
+Sitemap: https://pppd.ooo/sitemap.xml
+User-agent: Googlebot-Image
+Disallow: /*.svg$
+Disallow: /*.png$
+Disallow: /*.jpg$
+User-Agent: Yandex
+Disallow: *.svg
+Disallow: *.png
+Disallow: *.jpg
