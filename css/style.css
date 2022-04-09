@@ -61,6 +61,10 @@ body {
   font-size: 18px;
   line-height: 1.6;
   overflow-y: scroll;
+
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 nav {
@@ -83,10 +87,12 @@ nav ul li {
 
 main {
   margin-top: 50px;
+  flex-grow: 1;
 }
 
 .main-page {
   width: 420px;
+  padding-top: 30px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -179,6 +185,10 @@ iframe .iframe{
 
 /*---------------------- media ----------------------*/
 @media (max-width:767px) {
+  .main-page{
+    padding-top: 0px;
+  }
+
   .main-page,
   .page,
   .iframe {

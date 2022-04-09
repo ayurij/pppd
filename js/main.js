@@ -14,7 +14,7 @@ export async function loadPage(pageId) {
 export async function openPage(language = defaultLanguage, pageName = 'main', anchor = '') {
   //hide all
   const pageContentBlocks2 = document.querySelectorAll('.hidden'); 
-  pageContentBlocks2.forEach(element => element.style.display = 'none'); 
+  pageContentBlocks2.forEach(element => element.style.display = 'none'); //or element.classList.add('hidden'), element.classList.remove('hidden')
   //show menu & footer
   let menu = document.querySelector(`#menu-${language}`);
   if (!menu) menu = document.querySelector(`#menu-${defaultLanguage}`);
